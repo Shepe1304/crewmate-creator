@@ -10,7 +10,7 @@ import "./App.css";
 
 function App() {
   return (
-    <Router basename="/crewmate-creator/">
+    <Router>
       <div className="app">
         <Header />
         <main>
