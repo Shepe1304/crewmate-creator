@@ -70,6 +70,7 @@ Challenges while creating the app:
 - Implementing dynamic attribute options (Which took a long while)
 - Creating the success metric calculation (More details enclosed below)
 - Building the responsive design
+- Deploying app with hidden .env file
 
 ## Success Metric Calculation
 
