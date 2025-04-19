@@ -1,0 +1,32 @@
+:root {
+  --primary-color: #4f46e5;
+  --secondary-color: #7c3aed;
+  --background-color: #f3f4f6;
+  --card-color: #ffffff;
+  --text-color: #1f2937;
+  --light-text: #6b7280;
+  --accent-color: #ec4899;
+  --danger-color: #ef4444;
+  --success-color: #10b981;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}

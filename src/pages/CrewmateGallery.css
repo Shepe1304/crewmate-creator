@@ -1,0 +1,150 @@
+.crewmate-gallery {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.create-button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.create-button:hover {
+  background-color: var(--secondary-color);
+}
+
+.crewmate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px 0;
+  color: var(--light-text);
+}
+
+.error-message {
+  background-color: #fee2e2;
+  color: var(--danger-color);
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 16px;
+}
+
+.empty-gallery {
+  background-color: var(--card-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 48px 24px;
+  text-align: center;
+}
+
+.empty-image {
+  font-size: 64px;
+  margin-bottom: 24px;
+}
+
+.empty-gallery h2 {
+  margin-bottom: 16px;
+}
+
+.empty-gallery p {
+  color: var(--light-text);
+  margin-bottom: 24px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.crew-stats-container {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.crew-success-meter {
+  margin-bottom: 1.5rem;
+}
+
+.success-bar-container {
+  height: 20px;
+  width: 100%;
+  background-color: #e9ecef;
+  border-radius: 10px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.success-bar {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.5s ease-in-out;
+}
+
+.success-rating {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.success-description {
+  font-style: italic;
+  color: #495057;
+}
+
+.crew-statistics {
+  border-top: 1px solid #dee2e6;
+  padding-top: 1.5rem;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+.stat-value {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .gallery-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .crewmate-grid {
+    grid-template-columns: 1fr;
+  }
+}

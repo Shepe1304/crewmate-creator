@@ -1,0 +1,158 @@
+:root {
+  --primary-color: #4f46e5;
+  --secondary-color: #7c3aed;
+  --background-color: #f3f4f6;
+  --card-color: #ffffff;
+  --text-color: #1f2937;
+  --light-text: #6b7280;
+  --accent-color: #ec4899;
+  --danger-color: #ef4444;
+  --success-color: #10b981;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+}
+
+.container {
+  background-color: var(--card-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+h1, h2, h3 {
+  margin-bottom: 16px;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+button.danger {
+  background-color: var(--danger-color);
+}
+
+button.danger:hover {
+  background-color: #dc2626;
+}
+
+button.success {
+  background-color: var(--success-color);
+}
+
+input, select {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.attribute-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.attribute-option {
+  padding: 8px 16px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.attribute-option.selected {
+  border-color: var(--primary-color);
+  background-color: rgba(79, 70, 229, 0.1);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: var(--card-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px 16px;
+  border-top: 1px solid #eee;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.empty-state p {
+  margin-bottom: 20px;
+  color: var(--light-text);
+}
